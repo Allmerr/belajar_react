@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create UI with vanila js</title>
+</head>
+<body>
+
+    <div class="root"></div>
+
+<script>
+    const root = document.querySelector('.root');
+
+    const el = document.createElement('h1')
+    el.textContent = 'made using vanila js';
+    el.classList.add('heading-1')
+
+    root.appendChild(el)
+</script>
+</body>
+</html>

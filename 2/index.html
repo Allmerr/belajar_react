@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create UI with react js</title>
+</head>
+<body>
+
+    <div class="root"></div>
+
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+
+    // == using vanila js
+
+    // const root = document.querySelector('.root');
+
+    // const el = document.createElement('h1')
+    // el.textContent = 'made using vanila js';
+    // el.classList.add('heading-1')
+
+    // root.appendChild(el)
+
+
+    // == react js framework
+    
+    const root = document.querySelector('.root');
+
+    const el = React.createElement('h1', {
+        children : 'made using react js',
+        className : 'heading-1'
+    })
+
+    ReactDOM.render(el,root);
+
+</script>
+</body>
+</html>
